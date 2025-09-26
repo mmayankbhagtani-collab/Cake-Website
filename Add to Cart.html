@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#5e1f12;
+    border-bottom: 1px solid #f0eeee;
+}
+.navbar{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.nav-left .nav-logo .logo{
+    font-size: 30px;
+    font-weight: 800;
+}
+    .container {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .art-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+    .art-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .art-card h3 {
+      margin-top: 5px;
+      font-size: 22px;
+    }
+    .art-card p {
+      font-size: 18px;
+      color:black;
+       margin-top: -15px;
+    }
+    .art-card button {
+      margin-top: -5px;
+      padding: 8px 12px;
+      border: none;
+      background: #0077cc;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .cart {
+      background: #5e1f12;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .cart h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
+      color: #fff;
+    }
+    .cart ul {
+      list-style: none;
+      padding: 0;
+    }
+    .cart li {
+      margin: 8px 0;
+      padding: 8px;
+      background: #f1f1f1;
+      border-radius: 5px;
+    }
+    .cart p {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .p1{
+      color: #fff;
+      font-size: 20px;
+    }
+    .lo{
+        text-align: center;
+        font-size: 35px;
+        color: black;
+        padding-top: 100px;
+      }
+      .button{
+        background-color: #5e1f12;
+        border: 0px;
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+      .butt{
+        display: inline-block;
+        padding: 20px 24px;
+        background: #fff;
+        color: #5e1f12;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        transition: 0.3s ease;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .butt:hover {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+}
+.footer{
+    background-color: #5e1f12;
+    color: #fff;
+    padding: 20px 30px;
+}
+.footer .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .section-content .footer-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+  </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">
+          <h1 class="logo">🎂Cake Delight</h1>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+    <h1 class="lo"><u><b>Add to Cart</b></u></h1>
+
+  <div class="container">
+    <!-- Art Gallery -->
+    <section class="gallery">
+      <div class="art-card">
+        <img src="Pastry.jpg" alt="Art 1">
+        <h3>Pastry</h3>
+        <p>₹50</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="art-card">
+        <img src="Chocolates.jpg" alt="Art 2">
+        <h3>Chocolates</h3>
+        <p>₹100</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="art-card">
+        <img src="Cookies.jpg" alt="Art 3">
+        <h3>Cookies</h3>
+        <p>₹200</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="art-card">
+        <img src="Donuts.jpg" alt="Art 4">
+        <h3>Donuts</h3>
+        <p>₹300</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="art-card">
+        <img src="Brownies.jpg" alt="Art 5">
+        <h3>Brownies</h3>
+        <p>₹400</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="art-card">
+        <img src="Cakes.png" alt="Art 6">
+        <h3>Cakes</h3>
+        <p>₹500</p>
+        <button>Add to Cart</button>
+       </div>
+    
+
+    </section>
+
+    <!-- Cart Section -->
+    <aside class="cart">
+      <h2>Your Cart</h2>
+      <ul>
+        <li>Cake:₹500</li>
+        <li>Cookies:₹200</li>
+      </ul>
+      <p class="p1">Total:₹700</p>
+      <button class="button"><a href="order 1.html" class="butt">Place Your Order</a></button>
+    </aside>
+  </div>
+    <section class="footer">
+        <div class="section-content">
+            <div class="copyright">
+                <p>@2025 . All Right Reserved</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Term & Condition</li>
+                    <li>Delivery Policy</li>
+                    <li>Desclaimer</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+</html>

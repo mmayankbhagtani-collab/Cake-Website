@@ -1,0 +1,42 @@
+@media screen and (max-width: 822px){
+.hero-section .section-content .hero-details h1{
+    max-width: 70%;
+    font-size: 34px;
+    margin-bottom: 9px;
+}
+    #ii{
+        height: 200px;
+        width: 300px;
+    }
+
+    #about-img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .about-details p{
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .hero-section{
+        min-height: 60vh;
+    }
+
+    .hero-section .section-content{
+        min-height: 50vh;
+    }
+    .nav-menu li{
+        font-size: 9px;
+        gap: 10;
+    }
+    .nav-left, .nav-menu, .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+
+}

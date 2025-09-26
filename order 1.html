@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Your Order</title>
+  <link rel="stylesheet" href="media.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #5e1f12;
+      border-bottom: 1px solid #f0eeee;
+    }
+
+    .navbar {
+      max-width: 1300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px;
+      margin: 0 auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+    }
+
+    .nav-left .nav-logo .logo {
+      font-size: 30px;
+      margin-top: 10px;
+      font-weight: 800;
+    }
+
+    .container {
+      max-width: 600px;
+      margin-top: 100px;
+      margin-left: 400px;
+      background: #5e1f12;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      color: #fff;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 15px;
+      padding-right: 2px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #007bff;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .footer {
+      background-color: #5e1f12;
+      color: #fff;
+      padding: 20px 30px;
+    }
+
+    .footer .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer .section-content .footer-links ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    @media screen and(max-width: 822px) {
+      .container {
+        max-width: 600px;
+        background: #5e1f12;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: auto;
+        margin-top: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="Add to Cart.html" class="nav-logo">
+          <h1 class="logo">🎂Cake Delight</h1>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Place Your Order</h1>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your Email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your Phone Number" required>
+
+      <label for="address">Shipping Address</label>
+      <textarea id="address" rows="2" placeholder="Enter your Address" required></textarea>
+
+      <!-- <label for="product">Select Product</label>
+      <select id="product" required>
+        <option value="">--Choose an item--</option>
+        <option>Pastry</option>
+        <option>Chocolates</option>
+        <option>Cookies</option>
+        <option>Donuts</option>
+        <option>Brownies</option>
+        <option>Cakes</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" min="1" value="1" required> -->
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" required>
+        <option value="">--Select Payment--</option>
+        <option>Cash on Delivery</option>
+        <option>Credit/Debit Card</option>
+        <option>UPI/Net Banking</option>
+      </select>
+
+      <button type="submit">Confirm Order</button>
+
+
+    </form>
+  </div>
+  <section class="footer">
+    <div class="section-content">
+      <div class="copyright">
+        <p>@2025 . All Right Reserved</p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Term & Condition</li>
+          <li>Delivery Policy</li>
+          <li>Desclaimer</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+</body>
+
+</html>
